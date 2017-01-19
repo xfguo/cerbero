@@ -8,7 +8,7 @@ class Recipe(custom.GStreamerStatic):
     deps = ['gstreamer-1.0', 'gst-plugins-base-1.0', 'libjpeg-turbo', 'libpng',
             'speex', 'gdk-pixbuf', 'libsoup',
             'orc', 'wavpack', 'flac', 'taglib', 'bzip2', 'zlib',
-            'libvpx', 'libdv', 'cairo']
+            'libdv', 'cairo']
 
 
     files_plugins_core_devel = [
@@ -61,7 +61,6 @@ class Recipe(custom.GStreamerStatic):
              'libgstpng',
              'libgstspeex',
              'libgsttaglib',
-             'libgstvpx',
              'libgstwavenc',
              'libgstwavpack',
              'libgstwavparse',

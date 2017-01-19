@@ -19,13 +19,13 @@ class Recipe(custom.GStreamer):
         --disable-xvid --disable-zbar --disable-sdi --disable-qt'
     # Explicitly enable plugins
     configure_options += ' --enable-bz2 --enable-assrender \
-        --enable-faad --enable-kate --enable-openh264 --enable-opus \
+        --enable-faad --enable-kate --enable-opus \
         --enable-hls --enable-rtmp --enable-srtp --enable-schro --enable-dts \
         --enable-libmms --enable-resindvd --enable-soundtouch \
         --enable-voaacenc --enable-rsvg --enable-openjpeg --enable-spandsp'
     remotes = {'origin': 'git://anongit.freedesktop.org/gstreamer/gst-plugins-bad'}
     deps = ['gstreamer-1.0', 'gst-plugins-base-1.0', 'bzip2', 'libass',
-            'faad2', 'libkate', 'zlib', 'openh264', 'opus', 'nettle', 'librtmp',
+            'faad2', 'libkate', 'zlib', 'opus', 'nettle', 'librtmp',
             'libsrtp', 'schroedinger', 'libdca', 'libmms', 'libdvdnav',
             'soundtouch', 'vo-aacenc', 'librsvg', 'openjpeg', 'graphene',
             'spandsp', 'webrtc-audio-processing', 'sbc']
@@ -102,7 +102,6 @@ class Recipe(custom.GStreamer):
              'lib/gstreamer-1.0/libgstkate%(mext)s',
              'lib/gstreamer-1.0/libgstmidi%(mext)s',
              'lib/gstreamer-1.0/libgstmxf%(mext)s',
-             'lib/gstreamer-1.0/libgstopenh264%(mext)s',
              'lib/gstreamer-1.0/libgstopusparse%(mext)s',
              'lib/gstreamer-1.0/libgstpcapparse%(mext)s',
              'lib/gstreamer-1.0/libgstpnm%(mext)s',
